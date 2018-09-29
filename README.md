@@ -11,7 +11,7 @@ Some observations about this particular puzzle.
 
 ## Solution
 
-I offer a Swift solution, [wunder.swift](/sdsykes/nut-9/blob/master/wunder.swift), which comes in at 37 SLOC. It is really the simplest thing that I could come up with.
+I offer a Swift solution, [wunder.swift](wunder.swift), which comes in at 37 SLOC. It is really the simplest thing that I could come up with.
 
 Run like so (on a mac with Xcode installed):
 
@@ -31,7 +31,7 @@ Testing for vanishing is easy, the size of the trimmed string will be zero. Glid
 
 ## Alternative less elegant but extremely fast implementation
 
-For comparison and to verify my results, I developed a solution in C, [wunder.c](/sdsykes/nut-9/blob/master/wunder.c). Build with make.
+For comparison and to verify my results, I developed a solution in C, [wunder.c](wunder.c). Build with make.
 
 Although the swift solution is rather elegant, to get maximum speed you would want to go to C and use bit operations. I developed a solution which does this, you may find it in wunder.c. The algorithm is basically the same as the swift version, except that instead of using strings I use groups of 64 bit integers to store the pattern and generated lines, using the binary values 1 for filled and 0 for blank.
 
